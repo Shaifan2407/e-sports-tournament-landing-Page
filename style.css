@@ -1,0 +1,252 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+
+}
+
+header{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    color: white;
+    padding: 30px;
+}
+.banner h2{
+    font-size: 55px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+
+nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join{
+    color: red;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: black;
+    font-size: 45px;
+    font-style: oblique;
+}
+article p{
+    line-height: 1.8em;
+    color: #4b4b4b;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+
+section.join{
+    background-color: gray;
+    text-align: center;
+    padding: 40px 20px;
+    color: black;
+}
+
+.form1 input{
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 10px solid white;
+}
+.form1 select{
+    margin: 20px 0;
+    padding: 0 105px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 10px solid white;
+}
+
+.form1 strong{
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.form1 button{
+    margin: 20px 0;
+    padding: 0 75px;
+    font-size: 24px;
+    background-color: skyblue;
+}
+
+footer{
+    background: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* pseudo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+article p::first-letter{
+    font-size: 2rem;
+    color: black;
+    font-style: italic;
+}
+
+/* responsive styleing */
+
+@media screen and (max-width: 1200px) {
+    .banner h2{
+        font-size: 50px;
+    }
+    .banner img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .banner h2{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner h2{
+        font-size: 30px;
+    }
+    header{
+        position: relative;
+        width: auto;
+    }
+    nav{
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+
+    .banner .welcome br{
+        display: none;
+    }
+
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+
+    .banner .welcome span{
+        font-size: 1em;
+    }
+
+    .images li{
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    header{
+        position: relative;
+        width: auto;
+    }
+    nav{
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px;
+        top: 0;
+    }
+    nav{
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .form1 input{
+        margin: 20px 0;
+        padding: 0 4px;
+        font-size: 20px;
+        border-radius: 28px;
+        border: 10px solid white;
+    }
+    .form1 select{
+        padding: 0 16px;
+        font-size: 18px;
+    }
+}
