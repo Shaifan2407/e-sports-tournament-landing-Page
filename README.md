@@ -1,4 +1,4 @@
-# E-Sports Tournament Landing Page
+# E-Sports Tournament WebSite Landing Page
 
 ## Overview
 A simple, responsive landing page for an e-sports tournament. Built with HTML and CSS, it features a banner, tournament details, and a registration form.
